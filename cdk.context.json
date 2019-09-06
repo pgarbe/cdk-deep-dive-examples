@@ -1,0 +1,28 @@
+{
+  "vpc-provider:account=659154734889:filter.isDefault=true:region=eu-central-1": {
+    "vpcId": "vpc-1dcb7875",
+    "availabilityZones": [
+      "eu-central-1a",
+      "eu-central-1b",
+      "eu-central-1c"
+    ],
+    "publicSubnetIds": [
+      "subnet-5186f539",
+      "subnet-4dd96337",
+      "subnet-fd162db7"
+    ],
+    "publicSubnetNames": [
+      "Public"
+    ],
+    "publicSubnetRouteTableIds": [
+      "rtb-f5a5c49d",
+      "rtb-f5a5c49d",
+      "rtb-f5a5c49d"
+    ]
+  },
+  "availability-zones:account=659154734889:region=eu-central-1": [
+    "eu-central-1a",
+    "eu-central-1b",
+    "eu-central-1c"
+  ]
+}
