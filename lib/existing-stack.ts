@@ -7,10 +7,10 @@ export class ExistingStack extends cdk.Stack {
     super(scope, id, props);
 
     // 1) VPC from scratch
-    // const vpc = new Vpc(this, 'MyVPC');
+    const vpc = new Vpc(this, 'MyVPC');
 
     // 2) Queries AWS account during synth and saves information in 
-    Vpc.fromLookup(this, 'MyExistingVPC', {});
+    // Vpc.fromLookup(this, 'MyExistingVPC', {});
 
     // // Create VPC from existing export
 		// const vpc = Vpc.fromVpcAttributes(this, 'VPC', {
