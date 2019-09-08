@@ -1,23 +1,28 @@
 {
-  "vpc-provider:account=424144556073:filter.isDefault=true:region=eu-west-1": {
-    "vpcId": "vpc-69da950d",
+  "vpc-provider:account=659154734889:filter.isDefault=true:region=eu-central-1": {
+    "vpcId": "vpc-1dcb7875",
     "availabilityZones": [
-      "eu-west-1a",
-      "eu-west-1b",
-      "eu-west-1c"
+      "eu-central-1a",
+      "eu-central-1b",
+      "eu-central-1c"
     ],
     "publicSubnetIds": [
-      "subnet-c4dcbb9c",
-      "subnet-e13d1885",
-      "subnet-cdd08cbb"
+      "subnet-5186f539",
+      "subnet-4dd96337",
+      "subnet-fd162db7"
     ],
     "publicSubnetNames": [
       "Public"
     ],
     "publicSubnetRouteTableIds": [
-      "rtb-b8d4cbdc",
-      "rtb-b8d4cbdc",
-      "rtb-b8d4cbdc"
+      "rtb-f5a5c49d",
+      "rtb-f5a5c49d",
+      "rtb-f5a5c49d"
     ]
-  }
+  },
+  "availability-zones:account=659154734889:region=eu-central-1": [
+    "eu-central-1a",
+    "eu-central-1b",
+    "eu-central-1c"
+  ]
 }

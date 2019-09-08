@@ -1,3 +1,9 @@
 {
-  "app": "npx ts-node bin/aws-community-day.ts"
+  "app": "npx ts-node bin/aws-community-day.ts",
+  "context": {
+    "ami": "ami-12345678",
+    "659154734889": {
+      "ami": "ami-987654321"
+    }
+  }
 }
