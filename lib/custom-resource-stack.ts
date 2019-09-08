@@ -26,7 +26,8 @@ export class CustomResourceStack extends cdk.Stack {
       recordName: `_amazonses.example.com`,
       zone: zone,
       values: [ verifyDomainIdentity.getData('VerificationToken').toString() ]
-    });    
+    });
+
   }
 }
 

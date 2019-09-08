@@ -24,5 +24,31 @@
     "eu-central-1a",
     "eu-central-1b",
     "eu-central-1c"
+  ],
+  "vpc-provider:account=424144556073:filter.isDefault=true:region=eu-west-1": {
+    "vpcId": "vpc-69da950d",
+    "availabilityZones": [
+      "eu-west-1a",
+      "eu-west-1b",
+      "eu-west-1c"
+    ],
+    "publicSubnetIds": [
+      "subnet-c4dcbb9c",
+      "subnet-e13d1885",
+      "subnet-cdd08cbb"
+    ],
+    "publicSubnetNames": [
+      "Public"
+    ],
+    "publicSubnetRouteTableIds": [
+      "rtb-b8d4cbdc",
+      "rtb-b8d4cbdc",
+      "rtb-b8d4cbdc"
+    ]
+  },
+  "availability-zones:account=424144556073:region=eu-west-1": [
+    "eu-west-1a",
+    "eu-west-1b",
+    "eu-west-1c"
   ]
 }

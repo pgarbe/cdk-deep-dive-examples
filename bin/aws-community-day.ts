@@ -9,6 +9,7 @@ import { LambdaStack } from '../lib/lambda';
 import { S3DeployStack } from '../lib/s3deploy';
 import { AspectsStack } from '../lib/aspects-stack';
 import { CustomResourceStack } from '../lib/custom-resource-stack';
+import { DockerStack } from '../lib/docker-stack';
 
 const pgarbe = { account: '424144556073', region: 'eu-west-1' };
 const hoegertn = { account: '659154734889', region: 'eu-central-1' };
@@ -28,3 +29,4 @@ new S3DeployStack(app, 'S3DeployStack', { env: current });
 
 new AspectsStack(app, 'AspectsStack', { env: pgarbe });
 new CustomResourceStack(app, 'CustomResourceStack');
+new DockerStack(app, 'DockerStack', { env: pgarbe });
