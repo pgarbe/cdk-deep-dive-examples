@@ -1,8 +1,8 @@
 {
-  "name": "aws-community-day",
+  "name": "cdk-deep-dive",
   "version": "0.1.0",
   "bin": {
-    "aws-community-day": "bin/aws-community-day.js"
+    "cdk-deep-dive": "bin/cdk-deep-dive.js"
   },
   "scripts": {
     "build": "tsc",
