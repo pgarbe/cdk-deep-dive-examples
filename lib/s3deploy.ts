@@ -17,7 +17,7 @@ export class S3DeployStack extends cdk.Stack {
         });
         
         new BucketDeployment(this, 'DeployWebsite', {
-            source: Source.asset('./lambda'),
+            sources: [Source.asset('./lambda')],
             destinationBucket: bucket,
         });
 

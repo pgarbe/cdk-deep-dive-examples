@@ -1,13 +1,12 @@
 #!/usr/bin/env node
 import 'source-map-support/register';
 import cdk = require('@aws-cdk/core');
-import { AwsCommunityDayStack } from '../lib/aws-community-day-stack';
 import { MigrationStack } from '../lib/migration-stack';
 import { ExistingStack } from '../lib/existing-stack';
 import { ContextStack } from '../lib/context';
 import { LambdaStack } from '../lib/lambda';
 import { S3DeployStack } from '../lib/s3deploy';
-import { AspectsStack } from '../lib/aspects-stack';
+import { EvenLessCodeStack } from '../lib/even-less-code-stack';
 import { CustomResourceStack } from '../lib/custom-resource-stack';
 import { DockerStack } from '../lib/docker-stack';
 
@@ -17,7 +16,6 @@ const current = { account: process.env.CDK_DEFAULT_ACCOUNT, region: process.env.
 
 const app = new cdk.App();
 
-new AwsCommunityDayStack(app, 'AwsCommunityDayStack');
 new MigrationStack(app, 'MigrationStack');
 new ExistingStack(app, 'ExistingStack', { env: pgarbe });
 
@@ -27,6 +25,6 @@ new ContextStack(app, 'ContextStack', { env: hoegertn });
 new LambdaStack(app, 'LambdaStack', { env: current });
 new S3DeployStack(app, 'S3DeployStack', { env: current });
 
-new AspectsStack(app, 'AspectsStack', { env: pgarbe });
+new EvenLessCodeStack(app, 'EvenLessCodeStack', { env: pgarbe });
 new CustomResourceStack(app, 'CustomResourceStack');
 new DockerStack(app, 'DockerStack', { env: pgarbe });
