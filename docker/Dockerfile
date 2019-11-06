@@ -1,5 +1,6 @@
+ARG BASEIMAGE
 # Use an official Python runtime as a parent image
-FROM python:3.7-alpine
+FROM $BASEIMAGE
 
 # Set the working directory to /app
 WORKDIR /app

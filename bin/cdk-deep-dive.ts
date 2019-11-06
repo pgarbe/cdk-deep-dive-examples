@@ -27,4 +27,4 @@ new S3DeployStack(app, 'S3DeployStack', { env: current });
 
 new EvenLessCodeStack(app, 'EvenLessCodeStack', { env: pgarbe });
 new CustomResourceStack(app, 'CustomResourceStack');
-new DockerStack(app, 'DockerStack', { env: pgarbe });
+new DockerStack(app, 'DockerStack', { env: current });
