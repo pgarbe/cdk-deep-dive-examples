@@ -17,7 +17,7 @@ export class ExistingStack extends CompanyStack {
     // const vpc = Vpc.fromLookup(this, 'MyExistingVPC', { isDefault: true });
 
     // 3) Create VPC from existing export
-		// const vpc = Vpc.fromVpcAttributes(this, 'VPC', {
+		// const vpc = Vpc.fromVpcAttributes(this, 'ImportVPC', {
     //   vpcId: Fn.importValue('VPC'),
     //   availabilityZones: ['eu-west-1a', 'eu-west-1b', 'eu-west-1c'],
     //   publicSubnetIds: [

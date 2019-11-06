@@ -19,7 +19,7 @@ export class MigrationStack extends cdk.Stack {
     // const bucketArn = cdk.Fn.getAtt("MyS3Bucket", "Arn");
     // new cdk.CfnOutput(this, 'BucketArn', { value: bucketArn.toString() });
 
-    // // Option 3: Re-write manually and adopt
+    // Option 3: Re-write manually and adopt
     // const bucket = new s3.Bucket(this, "MyS3Bucket", { versioned: true, removalPolicy: cdk.RemovalPolicy.DESTROY });
     // DeletionPolicy: Delete is default in Cfn, Retain is default in CDK
 
