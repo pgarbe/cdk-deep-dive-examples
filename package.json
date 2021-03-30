@@ -10,27 +10,27 @@
     "cdk": "cdk"
   },
   "devDependencies": {
-    "@types/node": "12.7.4",
-    "@types/yaml": "^1.2.0",
-    "aws-cdk": "^1.15.0",
-    "ts-node": "^8.4.1",
-    "typescript": "^3.6.4"
+    "@types/node": "14.14.37",
+    "@types/yaml": "^1.9.6",
+    "aws-cdk": "^1.20.0",
+    "ts-node": "^9.1.1",
+    "typescript": "^4.2.3"
   },
   "dependencies": {
-    "@aws-cdk/aws-ec2": "^1.15.0",
-    "@aws-cdk/aws-ecs": "^1.15.0",
-    "@aws-cdk/aws-ecs-patterns": "^1.15.0",
-    "@aws-cdk/aws-elasticloadbalancingv2": "^1.15.0",
-    "@aws-cdk/aws-lambda": "^1.15.0",
-    "@aws-cdk/aws-route53": "^1.15.0",
-    "@aws-cdk/aws-s3": "^1.15.0",
-    "@aws-cdk/aws-s3-deployment": "^1.15.0",
-    "@aws-cdk/core": "^1.15.0",
-    "@aws-cdk/custom-resources": "^1.15.0",
-    "@types/js-yaml": "^3.12.1",
-    "cdk-watchful": "^0.3.0",
-    "js-yaml": "^3.13.1",
-    "source-map-support": "^0.5.16",
-    "yaml": "^1.7.2"
+    "@aws-cdk/aws-ec2": "^1.95.1",
+    "@aws-cdk/aws-ecs": "^1.95.1",
+    "@aws-cdk/aws-ecs-patterns": "^1.95.1",
+    "@aws-cdk/aws-elasticloadbalancingv2": "^1.95.1",
+    "@aws-cdk/aws-lambda": "^1.95.1",
+    "@aws-cdk/aws-route53": "^1.95.1",
+    "@aws-cdk/aws-s3": "^1.95.1",
+    "@aws-cdk/aws-s3-deployment": "^1.95.1",
+    "@aws-cdk/core": "^1.95.1",
+    "@aws-cdk/custom-resources": "^1.95.1",
+    "@types/js-yaml": "^4.0.0",
+    "cdk-watchful": "^0.5.127",
+    "js-yaml": "^4.0.0",
+    "source-map-support": "^0.5.19",
+    "yaml": "^1.10.2"
   }
 }

@@ -18,14 +18,15 @@ export class CustomResourceStack extends cdk.Stack {
         parameters: {
           Domain: 'example.com'
         },
-        physicalResourceIdPath: 'VerificationToken' // Use the token returned by the call as physical id
-      }
+        physicalResourceId: acr.PhysicalResourceId.fromResponse('VerificationToken'), // Use the token returned by the call as physical id
+      },
+      policy: acr.AwsCustomResourcePolicy.fromSdkCalls({ resources: acr.AwsCustomResourcePolicy.ANY_RESOURCE }),
     });
 
     new route53.TxtRecord(this, 'SESVerificationRecord', {
       recordName: `_amazonses.example.com`,
       zone: zone,
-      values: [ verifyDomainIdentity.getData('VerificationToken').toString() ]
+      values: [verifyDomainIdentity.getResponseField('VerificationToken').toString()]
     });
 
   }
